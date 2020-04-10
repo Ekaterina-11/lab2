@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1583433772 source:c:\users\Саша\desktop\лаба\product\library.cpp
+	"library.h"
+
+1583433678 c:\users\Саша\desktop\лаба\product\library.h
+	<iostream>
+	<string>
+
+1583435205 source:c:\users\Саша\desktop\лаба\product\main.cpp
+	"library.h"
+
+1583433772 source:c:\users\Саша\desktop\product\library.cpp
+	"library.h"
+
+1583433678 c:\users\Саша\desktop\product\library.h
+	<iostream>
+	<string>
+
+1583435205 source:c:\users\Саша\desktop\product\main.cpp
+	"library.h"
+
+1584276737 source:c:\users\Саша\desktop\лаба\product3\main.cpp
+	"library.h"
+
+1584278006 c:\users\Саша\desktop\лаба\product3\library.h
+	<iostream>
+	<string>
+
+1584278858 source:c:\users\Саша\desktop\лаба\product3\library.cpp
+	"library.h"
+
+1586246229 source:c:\users\Саша\desktop\лаба\product5\library.cpp
+	"library.h"
+
+1586244090 c:\users\Саша\desktop\лаба\product5\library.h
+	<iostream>
+	<string>
+
+1586245766 source:c:\users\Саша\desktop\лаба\product5\main.cpp
+	"library.h"
+
