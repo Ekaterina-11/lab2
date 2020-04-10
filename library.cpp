@@ -50,37 +50,37 @@ int Product::GetSize() {
 }
 
 
-void Product::operator++(){
+void Product::operator++(){ //оператор увеличения поля size1
     this->size1++;
 }
-void Product::operator--(){
+void Product::operator--(){ //оператор уменьшения поля size1
     this->size1--;
 }
-bool Product::operator == (const Product &product){
-    return ((this->size1 == product.size1) && (this->name == product.name) && (this->color == product.color));
+bool Product::operator == (const Product &product){ //оператор равенства
+    return ((this->size1 == product.size1) && (this->name == product.name) && (this->color == product.color)); 
 }
-bool Product::operator != (const Product &product){
-    return !((this->size1 == product.size1) && (this->name == product.name) && (this->color == product.color));
+bool Product::operator != (const Product &product){ //оператор неравенства
+    return !((this->size1 == product.size1) && (this->name == product.name) && (this->color == product.color)); 
 }
-bool Product::operator > (const Product &product){
+bool Product::operator > (const Product &product){ //оператор "больше"
     return (this->size1 > product.size1);
 }
-bool Product::operator < (const Product &product){
+bool Product::operator < (const Product &product){ //оператор "меньше"
     return (this->size1 < product.size1);
 }
-ostream& operator << (ostream &iz, const Product &product){
+ostream& operator << (ostream &iz, const Product &product){ //оператор вывода
     iz << "Name: " << product.name << endl;
     iz << "Color: " << product.color << endl;
     iz << "Size: " << product.size1 << endl;
     return iz;
 }
-istream& operator >> (istream &v, Product &product){
+istream& operator >> (istream &v, Product &product){ //оператор ввода
     v >> product.name;
     v >> product.color;
     v >> product.size1;
     return  v;
 }
-Product Product::operator = (const Product &product){
+Product Product::operator = (const Product &product){ //оператор присваивания
     this->name = product.name;
     this->color = product.color;
     return *this;
