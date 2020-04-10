@@ -30,12 +30,12 @@ int main() {
 
     cout << endl << endl;
 
-    p.operator++();
+    p.operator++(); //вызов оператора увеличения поля
     cout << "Operator++" << endl;
     p.print();
     cout << endl;
 
-    p.operator--();
+    p.operator--(); //вызов оператора уменьшения поля
     cout << "Operator--" << endl;
     p.print();
     p3.SetName("grechka");
@@ -43,13 +43,12 @@ int main() {
     p3.SetSize(500);
     cout << endl;
 
-    cout << "Operator=" << endl;
+    cout << "Operator=" << endl; //вызов оператора присваивания
     p3.print();
     cout << endl;
     p3 = p;
     p3.print();
     cout << endl;
-
     cout << "Nachalniy object: " << endl;
     p.print();
     cout << endl;
@@ -57,31 +56,31 @@ int main() {
     p3.print();
     cout << endl;
 
-    cout << "Operator==" << endl;
+    cout << "Operator==" << endl; //вызов оператора равенства
     bool obj = p == p3;
     cout << "bool is " << obj << endl;
     cout << endl;
 
-    cout << "Operator!=" << endl;
+    cout << "Operator!=" << endl; //вызов оператора неравенства
     obj = p != p3;
     cout << "bool is " << obj << endl;
     cout << endl;
 
-    cout << "Operator> (Size) " << endl;
+    cout << "Operator> (Size) " << endl; //вызов оператора "больше"
     obj = p > p3;
     cout << "bool is " << obj << endl;
     cout << endl;
 
-    cout << "Operator< (Size) " << endl;
+    cout << "Operator< (Size) " << endl; //вызов оператора "меньше"
     obj = p < p3;
     cout << "bool is " << obj << endl;
     cout << endl;
 
-    cout << "Operator<< (Vvedenniy object) " << endl;
+    cout << "Operator<< (Vvedenniy object) " << endl; //вызов оператора ввода
     cout << p << endl << endl;
 
     cout << "Operator>> (Izmenenniy object) " << endl;
-    cout << "Vvedite dannie:\n" << "Nazvanie: Cvet: Kolichestvo:" << endl;
+    cout << "Vvedite dannie:\n" << "Nazvanie: Cvet: Kolichestvo:" << endl; //вызов оператора вывода
     cin >> p;
     cout << endl << "Izmenenniy:" << endl;
     p.print();
