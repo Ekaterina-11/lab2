@@ -1,6 +1,6 @@
 #include "library.h"
 
-void Product::print() {
+void Product::print() const{
 	cout <<"Nazvaniye producta: "<< name <<"\nCvet producta: "<< color <<"\nKolichestvo producta: "<< size1 << endl;
 }
 
