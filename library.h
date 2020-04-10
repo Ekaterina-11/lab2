@@ -13,7 +13,7 @@ public:
 	Product();
 	Product(string _name, string _color, int _size);
 	Product(const Product &p);
-	void print();
+	void print() const;
 	void SetName(string name_);
 	string GetName();
 	void SetColor(string color_);
