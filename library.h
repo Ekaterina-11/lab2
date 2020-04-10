@@ -21,15 +21,15 @@ public:
 	bool SetSize(int size_);
 	int GetSize();
 
-	void operator++();
-    void operator--();
-    Product operator = (const Product &product);
-    bool operator == (const Product &product);
-    bool operator != (const Product &product);
-    bool operator > (const Product &product);
-    bool operator < (const Product &product);
-    friend ostream& operator << (ostream &iz, const Product &product);
-    friend istream& operator >> (istream &v, Product &product);
+    void operator++(); //создание оператора увеличения поля
+    void operator--(); //создание оператора уменьшения поля
+    Product operator = (const Product &product); //создание оператора присваивания
+    bool operator == (const Product &product); //создание оператора равенства
+    bool operator != (const Product &product); //создание оператора неравенства
+    bool operator > (const Product &product); //создание оператора "больше"
+    bool operator < (const Product &product); //создание оператора "меньше"
+    friend ostream& operator << (ostream &iz, const Product &product); //создание оператора вывода
+    friend istream& operator >> (istream &v, Product &product); //создание оператора ввода
 };
 
 #endif // LIBRARY_H_INCLUDED
